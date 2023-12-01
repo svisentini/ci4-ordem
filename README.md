@@ -13,5 +13,9 @@ php spark serve
 # No arquivo routing.php
 	Alterar propriedade $autoRoute = true; >> Para que os controllers e os metodos possam ser encontrados.
 
+php spark make:controller  >> Cria um novo controller
+    Teste
+
+Endereço/<Controller>/<metodo>
 
 
