@@ -18,4 +18,17 @@ php spark make:controller  >> Cria um novo controller
 
 Endereço/<Controller>/<metodo>
 
+# PHP My Admin
+	http://localhost:81/phpmyadmin/
+	utf8mb4_general_ci
 
+	database.default.hostname = 127.0.0.1
+	database.default.database = teste-ci4
+
+	php spark migrate >> Cria a tabela de migrações (se nao tiver) e rodas todas migrações
+	
+# Migration
+	Ref: https://codeigniter.com/user_guide/dbmgmt/migration.html 
+	Criar o arquivo de migration >> php spark make:migration <nome da migration>
+	Rodar as migrações >> php spark migrate
+	
