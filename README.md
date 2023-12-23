@@ -32,3 +32,19 @@ Endereço/<Controller>/<metodo>
 	Criar o arquivo de migration >> php spark make:migration <nome da migration>
 	Rodar as migrações >> php spark migrate
 	
+# Modelo
+	Ref: https://codeigniter.com/user_guide/models/model.html
+	Criar o modelo >> php spark make:model CorModel
+	
+# Database Seeding
+	Ref: https://codeigniter.com/user_guide/dbmgmt/seeds.html?highlight=seeding
+	php spark make:seeder CorSeeder 
+	php spark make:seeder CentralSeeder    >> Sera usado como um Seeder central --> Chamara os outros seeders
+	
+	Para rodar um Seeder >> php spark db:seed CentralSeeder
+	
+	
+	
+	
+	
+	
