@@ -4,6 +4,10 @@ Curso da Udemy
 # ORDEM (Udemy)
 
 composer create-project codeigniter4/appstarter ci4-ordem
+
+composer clearcache
+composer update
+
 php spark serve
 
 # Renomear arquivo "env" para ".env"
@@ -19,7 +23,8 @@ php spark make:controller  >> Cria um novo controller
 Endereço/<Controller>/<metodo>
 
 # PHP My Admin
-	http://localhost:81/phpmyadmin/
+	sudo /opt/lampp/manager-linux-x64.run >> Para rodar o Xammp
+	http://localhost:81/phpmyadmin/       OU  http://localhost/phpmyadmin/
 	utf8mb4_general_ci
 
 	database.default.hostname = 127.0.0.1
@@ -34,6 +39,7 @@ Endereço/<Controller>/<metodo>
 	
 # Modelo
 	Ref: https://codeigniter.com/user_guide/models/model.html
+	Um Modelo representa uma tabela no Banco de Dados.
 	Criar o modelo >> php spark make:model CorModel
 	
 # Database Seeding

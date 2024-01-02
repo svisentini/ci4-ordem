@@ -20,8 +20,13 @@ class Teste extends BaseController
 
     public function minha(){
 
+        $corModel = new \App\Models\CorModel();
+
+
+
+
         $dados = [
-            'cores' => ['azul', 'amarelo', 'vermelho', 'preto'],
+            'cores' => $corModel->findAll(),
             'info' => 'Possiveis cores:',
         ];
 
