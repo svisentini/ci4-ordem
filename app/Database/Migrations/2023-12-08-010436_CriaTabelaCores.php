@@ -18,6 +18,9 @@ class CriaTabelaCores extends Migration
             'nome' => [
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
+            ],
+            'descricao' => [
+                'type'       => 'TEXT'
             ]
         ]);
 

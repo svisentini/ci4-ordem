@@ -26,8 +26,9 @@ class Teste extends BaseController
 
 
         $dados = [
-            'cores' => $corModel->findAll(),
+            'cores' => $corModel->where('ativa', true)->findAll(),
             'info' => 'Possiveis cores:',
+            'titulo' => 'Lista de cores:'
         ];
 
         // echo 'Esse é o metodo minha() dentro do controller Teste';

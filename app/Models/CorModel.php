@@ -9,7 +9,7 @@ class CorModel extends Model
     protected $table            = 'cores';
     protected $returnType       = 'object'; // array, object ou entity
     protected $useSoftDeletes   = false;
-    protected $allowedFields    = ['nome'];
+    protected $allowedFields    = ['nome','descricao'];
 
 
 
